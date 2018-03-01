@@ -34,5 +34,3 @@ dependencies:
   - wheel=0.30.0=py35h5c0b906_1
   - xz=5.2.3=h0278029_2
   - zlib=1.2.11=hf3cbc9b_2
-prefix: /Users/abrahamduplaa/miniconda3/envs/hashcode
-
