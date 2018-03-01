@@ -8,11 +8,13 @@ def inputs(file_name):
     #print(cwd)
 
     F = open(cwd+"/input/"+file_name,'r')
-    conditions_ = F.readline()
-    conditions = conditions_.rstrip('\n')
-
+    conditions_2 = F.readline()
+    conditions_1 = conditions_2.rstrip('\n')
+    conditions   = [int(n) for n in conditions_1.split()]
     for line in F:
-        rides.append(line.rstrip('\n'))
+        line_noend = line.rstrip('\n')
+        line_int = [int(n) for n in line_noend.split()]
+        rides.append(line_int)
 
     return conditions, rides
 
