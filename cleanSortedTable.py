@@ -11,7 +11,6 @@ def cleanSortedTable(possible_rides_sorted):
     # Iterate over the table
     for i in range(0,rows):
         # Find entries with zero or negative points
-        print(possible_rides_sorted[i][0])
         if possible_rides_sorted[i][0] == 0 or possible_rides_sorted[i][0] < 0:
             bad_rows.append(i)
 
